@@ -1,24 +1,26 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { getImage, GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export const ServiceBlock = ({block}) => {
-    const coverImage = getImage(block.services.serviceCoverImage);
     return (
         <section className="services__block" key={block.id}>
-            <GatsbyImage image={coverImage} alt="" />
-            <h1>{block.title}</h1>
-            <p>{block.services.description.description}</p>
-            <button
-            slug={block.services.button.slug}
-            title={block.services.button.title}
-            />
+           {block.services.map(service => {
+             return (
+               <div>
+               <h1>{service.title}</h1>
+               <p>{service.description.description}</p>
+               <GatsbyImage src={service.serviceCoverImage} alt="no-image"/>
+               <button slug={service.button.slug}>
+                 {service.button.title}
+               </button>
+               </div>
+             )
+           })}
             
         </section>
     )
 }
-
-
 
 export const query = graphql`
 fragment ServiceBlock on ContentfulServicesBlock {
@@ -30,21 +32,11 @@ fragment ServiceBlock on ContentfulServicesBlock {
         description {
           description
         }
-        serviceCoverImage {
-          gatsbyImageData(
-            quality: 8
-            placeholder: TRACED_SVG
-            layout: FULL_WIDTH
-            formats: AUTO
-          )
-        }
         serviceActionImages {
-          gatsbyImageData(
-            quality: 8
-            placeholder: BLURRED
-            layout: FULL_WIDTH
-            formats: AUTO
-          )
+          gatsbyImageData(layout: FIXED, quality: 10)
+        }
+        serviceCoverImage {
+          gatsbyImageData(layout: FIXED, quality: 10)
         }
         button {
             title

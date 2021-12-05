@@ -22,9 +22,8 @@ fragment HomeBanner on ContentfulBanner {
     title
     bannerLogo {
       gatsbyImageData(
-        quality: 8
+        quality: 10
         placeholder: BLURRED
-        layout: FULL_WIDTH
         formats: JPG
       )
     }
