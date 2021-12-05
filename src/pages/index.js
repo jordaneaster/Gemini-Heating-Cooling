@@ -1,18 +1,36 @@
+import { graphql } from "gatsby"
 import * as React from "react"
 
-// data
-
-
-// markup
-const IndexPage = () => {
+const IndexPage = ({data}) => {
   return (
-    <main>
-      <title>Gemini Heating & Cooling</title>
-      <h1>
-       Gemini Heating & Cooling
-      </h1>
-    </main>
+    
   )
 }
+
+
+
+
+
+export const query = graphql`
+{
+  contentfulLandingPage {
+    id
+    contentBlocks {
+      type: __typename
+      ... on Node {
+        ... on ContentfulBanner {
+          ...HomeBanner
+        }
+        ... on ContentfulWelcomeBanner {
+          ...WelcomeBanner
+        }
+        ... on ContentfulServicesBlock {
+          ...ServiceBlock
+        }
+      }
+    }
+  }
+}
+`
 
 export default IndexPage
