@@ -1,10 +1,11 @@
 import { graphql } from "gatsby"
 import * as React from "react"
+import BlockComponents from "../components/block-functionality/BlockComponent"
 
 const IndexPage = ({data}) => {
-  return (
-    
-  )
+ return (
+   <BlockComponents blocks={data.contentfulLandingPage.contentBlocks}/>
+ )
 }
 
 
@@ -21,7 +22,7 @@ export const query = graphql`
         ... on ContentfulBanner {
           ...HomeBanner
         }
-        ... on ContentfulWelcomeBanner {
+        ... on ContentfulWelcomeHeader {
           ...WelcomeBanner
         }
         ... on ContentfulServicesBlock {
@@ -32,5 +33,4 @@ export const query = graphql`
   }
 }
 `
-
 export default IndexPage
