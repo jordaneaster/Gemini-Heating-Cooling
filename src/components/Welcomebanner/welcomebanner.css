@@ -1,0 +1,49 @@
+.title_banner{
+    color: #0150B8;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 50px;
+
+}
+.welcome_banner{
+    width: 85%;
+    margin: auto;
+}
+.Welcomebanner_FLex{
+    display: flex;
+    align-items: center;
+}
+.welcome_image{
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.welcome_flex1{
+    width: 50%;
+}
+.welcome_flex2{
+    width: 60%;
+}
+.block__description{
+    padding-left: 20px;
+    line-height: 25px;
+    font-size: 17px;
+    color: rgb(82, 79, 79);
+}
+.welcome_button{
+    background: #333333;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    width: 150px;
+}
+.btnalign{
+    width: 50%;
+    margin: auto;
+    
+}

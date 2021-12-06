@@ -1,11 +1,13 @@
 import { graphql } from "gatsby"
 import * as React from "react"
 import BlockComponents from "../components/block-functionality/BlockComponent"
-
-const IndexPage = ({data}) => {
- return (
-   <BlockComponents blocks={data.contentfulLandingPage.contentBlocks}/>
- )
+import Layout from '../components/Layout/Layout'
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <BlockComponents blocks={data.contentfulLandingPage.contentBlocks} />
+    </Layout>
+  )
 }
 
 

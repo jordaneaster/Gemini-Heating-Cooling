@@ -1,7 +1,7 @@
 import React from "react";
-import WelcomeBanner from "../WelcomeBanner";
-import  HomeBanner  from "../HomeBanner";
-import  ServiceBlock  from "../ServiceBlock";
+import WelcomeBanner from "../Welcomebanner/Welcomebanner";
+import  HomeBanner  from "../HomeBanner/HomeBanner";
+import  ServiceBlock  from "../ServiceBlock/ServiceBlock";
 
 export const BlockComponents = ({blocks}) => {
     const fragments = {
