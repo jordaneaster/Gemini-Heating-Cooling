@@ -1,5 +1,7 @@
 .service_card_title{
-
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0px;
 }
 .card{
     width: 85%;
@@ -9,13 +11,14 @@
     margin: auto;
 }
 .Card_item{
-    width: 30%;
+    width: 25%;
+    margin-right: 20px;
     margin-top: 50px;
     cursor: pointer;
 }
 .image_card{
     width: 100%;
-    height: 250px;
+    height: 200px;
     border-radius: 10px;
     
 }

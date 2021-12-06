@@ -23,7 +23,7 @@ export const ServiceBlock = ({block}) => {
 }
 
 export const query = graphql`
-fragment ServiceBlock on ContentfulServicesBlock {
+fragment ServiceBlosck on ContentfulServicesBlock {
     id
     title
     services {

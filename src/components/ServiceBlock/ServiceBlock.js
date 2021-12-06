@@ -1,9 +1,7 @@
 import React from "react";
-import { graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql, Link } from "gatsby";
 import './service.css'
 const ServiceBlock = ({ block }) => {
-    console.log(block)
     return (
         <section className="services__block">
             <h1 className="title_banner">{block.title}</h1>
@@ -14,14 +12,15 @@ const ServiceBlock = ({ block }) => {
                             <img className="image_card" src={service.serviceCoverImage.gatsbyImageData.images.fallback.src} />
                             <h1 className="service_card_title">{service.title}</h1>
                             <p className="card_para">{service.description.description}</p>
-                            <button className="cardbtn">
-                                Read More
+                            <Link to={`/${service.slug}`}>
+                                <button className="cardbtn">
+                                    Read More
                             </button>
+                            </Link>
                         </div>
                     )
                 })}
             </div>
-
         </section>
     )
 }
@@ -36,6 +35,7 @@ fragment ServiceBlock on ContentfulServicesBlock {
         description {
           description
         }
+        slug
         serviceActionImages {
           gatsbyImageData(layout: FIXED, quality: 10)
         }
