@@ -11,10 +11,10 @@ const Footer = () => {
                 <div className="footerLink">
                     <div className="footerbreak">
                         <div className="w1">
-                            <p className="lightcolor">Ziegler Heating</p>
-                            <p className="fontslim">5223 N Ridge Rd W <br /> Ashtabula, OH 44004</p>
-                            <p className="lightcolor">(440) 969-1141</p>
-                            <p className="lightcolor">info@zieglerheating.com</p>
+                            <p className="lightcolor">Gemini</p>
+                            <p className="fontslim">4086 Autumn Hill Ln,<br /> Hamilton, OH 45011, USA</p>
+                            {/* <p className="lightcolor">(440) 969-1141</p> */}
+                            <p className="lightcolor">Geminiheatingandcooling@gmail.com</p>
                         </div>
                         <div className="w2">
                             <p className="links">Home</p>
