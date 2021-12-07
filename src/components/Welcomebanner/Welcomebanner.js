@@ -7,7 +7,7 @@ export const WelcomeBanner = ({ block }) => {
     const actionImage = getImage(block.actionImage);
     return (
         <section className="welcome_banner">
-            <h1 className="title_banner">{block.title}</h1>
+            {/* <h1 className="title_banner">{block.title}</h1> */}
             <div className="Welcomebanner_FLex">
                 <div className="welcome_flex1">
                     <img className="welcome_image" src={actionImage.images.fallback.src} alt="baner" />
@@ -22,7 +22,7 @@ export const WelcomeBanner = ({ block }) => {
                 </div>
             </div>
         </section>
-    )
+    ) 
 }
 
 

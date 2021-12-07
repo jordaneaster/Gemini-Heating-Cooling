@@ -8,10 +8,10 @@
     z-index: 20;
     width: 100%;
     margin: auto;
-    background-color: white;
+    background-color: #012f5e;
   }
   .Logo_image{
-    max-width: 180px;
+    max-width: 30%;
   }
   
   .nav-container {
@@ -19,14 +19,12 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 80px;
+    height: 60px;
     max-width: 1500px;
   }
   
   .nav-logo {
-    color: #f5b921;
     align-items: center;
-    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -49,7 +47,7 @@
     font-size: 16px;
     line-height: 100%;
     letter-spacing: -0.02em;
-    color: #003545;
+    color: white;
     padding: 0.5rem 1rem;
     height: 100%;
     
@@ -76,7 +74,7 @@
   
   .nav-item:hover:after {
     width: 100%;
-    background: #003545;
+    background: white;
   }
   
   .nav-item .active {
@@ -99,7 +97,46 @@
   .mob_view{
     display: inline-block;
   }
+  .gemini{
+    width: 100%;
+    background-color: white;
+    height: 80px;
+  }
+  .gemini_flex{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .schedules{
+    background-color: #ac3122 !important;
+    height: 40px !important;
+    border-radius: 10px !important;
+    outline: none;
+    color: white;
+  }
+  .daa{
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+  }
+  .paraser{
+    font-size: 17px;
+  }
+  .Logo_image{
+    width: 100%;
+  }
   
+  .number{
+    color: #ac3122;
+    padding-left: 30px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .number:hover{
+    color: red;
+  }
   @media screen and (max-width: 960px) {
     .navbar {
       height: 70px;
@@ -122,6 +159,7 @@
       height: auto;
       max-width: 1500px;
     }
+
     .nav-menu {
       display: flex;
       flex-direction: column;

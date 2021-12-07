@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Nav.css";
-import Logo from '../../images/gemini_main_logo.jpg'
+import Logo from '../../images/gemini.png'
 import Hamberger from '../../images/Hamberger.svg'
 import { Link } from 'gatsby';
 
@@ -35,13 +35,22 @@ function NavBar() {
     ]
     return (
         <>
-            <nav className="navbar">
+            <div className="gemini">
+                <div className="gemini_flex">
+                    <div>
+                        <Link to="/">
+                            <span className="nav-logo">
+                                <img className="Logo_image" src={Logo} alt="no logo" />
+                            </span>
+                        </Link>
+                    </div>
+                    <div className="daa">
+                        <p className="paraser">Servicing <span style={{color:'#ac3122'}}>Northeast Ohio,</span> Call Now<br /><a href="tel:2167319400" className="number">(216) 731-9400</a></p>
+                    </div>
+                </div>
+            </div>
+            <nav className="navbar"  >
                 <div className="nav-container">
-                    <Link to="/">
-                        <span className="nav-logo">
-                            <img className="Logo_image" src={Logo} alt="no logo" />
-                        </span>
-                    </Link>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         {navItems.map((el, i) => (
                             <Link to={`${el.slug}`} key={i}>
@@ -56,6 +65,7 @@ function NavBar() {
                             </Link>
                         ))}
                     </ul>
+                    <button className="schedules">Request Quote</button>
                     <div className="nav-icon" onClick={handleClick}>
                         <div className={`Hamberger ${click ? "fas fa-times" : "fas fa-bars"}`}>
                             <img src={Hamberger} className="Hamberger_item" alt="Hamberger menu" />

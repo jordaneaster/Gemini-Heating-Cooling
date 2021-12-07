@@ -5,7 +5,7 @@ const ServiceBlock = ({ block }) => {
     return (
         <section className="services__block">
             <h1 className="title_banner">{block.title}</h1>
-            <div className="card">
+            <div className="card"> 
                 {block.services.map(service => {
                     return (
                         <div className="Card_item">

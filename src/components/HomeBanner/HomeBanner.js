@@ -1,16 +1,19 @@
 import React from "react";
 import { graphql } from "gatsby";
 import './Homebanner.css'
-import { getImage, GatsbyImage } from "gatsby-plugin-image";
+import image from '../../images/6259536.jpg'
+import { getImage } from "gatsby-plugin-image";
 
-export const HomeBanner = ({block}) => {
-    const bannerLogo = getImage(block.bannerLogo);
-    return (
-        <section className="home__banner">
-            <img className="imagess" src={bannerLogo.images.fallback.src} />
-            <button className="btnbanner">{block.button.title}</button>
-        </section>
-    )
+export const HomeBanner = ({ block }) => {
+  const bannerLogo = getImage(block.bannerLogo);
+  // bannerLogo.images.fallback.src
+  return (
+    <section className="home__banner">
+      <img className="imagess" src={image} />
+      <h1 className="mind">Quality Heating & Cooling Services For Your Peace of Mind</h1>
+      <button className="btnbanner">{block.button.title}</button>
+    </section>
+  )
 }
 
 export const query = graphql`

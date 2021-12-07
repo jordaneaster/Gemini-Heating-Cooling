@@ -1,5 +1,6 @@
 .FooterConatiner{
     width: 100%;
+    background-color: #012f5e;
 }
 .FooterboX{
     width: 80%;
@@ -23,18 +24,17 @@
     justify-content: space-around;
 }
 .links{
-    color: blue;
+    color: white;
     font-weight: bold;
 }
 .links:hover{
     text-decoration: underline;
 }
 .lightcolor{
-    color: lightsteelblue;
+    color: white;
 }
-.lightcolor:hover{
-    transition: 0.8s;
-    color: rgb(37, 35, 35);
+.fontslim{
+    color: white;
 }
 @media screen and (max-width: 600px) {
     
