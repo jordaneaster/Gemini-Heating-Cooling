@@ -1,8 +1,10 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import './service.css'
+import Estimate from '../EstimateBanner/Estimatebanner'
 const ServiceBlock = ({ block }) => {
     return (
+        <>
         <section className="services__block">
             <h1 className="title_banner">{block.title}</h1>
             <div className="card">
@@ -14,7 +16,7 @@ const ServiceBlock = ({ block }) => {
                             <p className="card_para">{service.description.description}</p>
                             <Link to={`/${service.slug}`}>
                                 <button className="cardbtn">
-                                    Read More
+                                    {service.button[0].title}
                             </button>
                             </Link>
                         </div>
@@ -22,6 +24,8 @@ const ServiceBlock = ({ block }) => {
                 })}
             </div>
         </section>
+        <Estimate />
+        </>
     )
 }
 

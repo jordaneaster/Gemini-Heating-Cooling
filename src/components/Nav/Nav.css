@@ -9,6 +9,7 @@
     width: 100%;
     margin: auto;
     background-color: #012f5e;
+    border-bottom: 2px solid white;
   }
   .Logo_image{
     max-width: 30%;
@@ -100,15 +101,16 @@
   .gemini{
     width: 100%;
     background-color: white;
-    height: 80px;
   }
   .gemini_flex{
-    width: 80%;
+    width:100%;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
+  .Logo_imasge{
+    width: 40%;
+}
   .schedules{
     background-color: #ac3122 !important;
     height: 40px !important;
@@ -119,7 +121,7 @@
   .daa{
     display: flex;
     justify-content: space-between;
-    width: 28%;
+    width: 50%;
   }
   .paraser{
     font-size: 17px;

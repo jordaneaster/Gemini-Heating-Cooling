@@ -1,0 +1,21 @@
+.partner_container{
+    width: 100%;
+    background-color: #012f5e !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.partner_block{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.partsners{
+    font-weight: 300;
+    font-size: 55px;
+    text-shadow: 0 0 4px #fff;
+    padding-left: 10px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}

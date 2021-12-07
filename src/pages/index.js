@@ -10,10 +10,6 @@ const IndexPage = ({ data }) => {
   )
 }
 
-
-
-
-
 export const query = graphql`
 {
   contentfulLandingPage {

@@ -1,0 +1,33 @@
+.bannersss_container{
+    width: 100%;
+    text-align: center;
+    background: #ac3122;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+.es_heading{
+    font-weight: 300;
+    font-size: 35px;
+    text-shadow: 0 0 4px #fff;
+    color: #fff;
+    margin: 0px;
+}
+.es_para{
+    font-weight: 300;
+    font-size: 18px;
+    text-shadow: 0 0 4px #fff;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.es_btm{
+    width: 200px;
+    height: 50px;
+    background: #012f5e;
+    color: white;
+    outline: none;
+    
+}
