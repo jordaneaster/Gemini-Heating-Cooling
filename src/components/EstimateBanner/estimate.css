@@ -31,3 +31,22 @@
     outline: none;
     
 }
+@media screen and (max-width: 600px) {
+    .es_heading{
+        font-weight: 300;
+        font-size: 25px;
+        text-shadow: 0 0 4px #fff;
+        color: #fff;
+        margin: 0px;
+    }
+    .es_para{
+        font-weight: 300;
+        font-size: 16px;
+        text-shadow: 0 0 4px #fff;
+        color: #fff;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}

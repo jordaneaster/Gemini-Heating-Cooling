@@ -31,3 +31,53 @@
     color: white;
     outline: none;
 }
+@media screen and (max-width: 960px) {
+    .banners_block{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .banners_container{
+        width: 100%;
+        background-color: #ac3122;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .heading_banner{
+        font-weight: 300;
+        font-size: 35px;
+        text-shadow: 0 0 4px #fff;
+        color: #fff;
+        margin: 0;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .banners_block{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .banners_container{
+        width: 100%;
+        background-color: #ac3122;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .heading_banner{
+        font-weight: 300;
+        font-size: 25px;
+        text-shadow: 0 0 4px #fff;
+        color: #fff;
+        margin: 0;
+    }
+    
+}

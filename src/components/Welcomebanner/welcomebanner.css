@@ -50,3 +50,71 @@
     margin: auto;
     
 }
+@media screen and (max-width: 960px) {
+    .Welcomebanner_FLex{
+        display: block;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .welcome_flex1{
+        width: 80%;
+        margin: auto;
+    }
+    .welcome_flex2{
+        width: 90%;
+        margin: auto;
+    }
+    .btnalign{
+        width: 80%;
+        margin: auto;
+        
+    }
+    .welcome_button{
+        background-color: #ac3122 !important;
+        height: 40px !important;
+        color: white;
+        font-weight: bold;
+        outline: none;
+        height: 40px;
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Welcomebanner_FLex{
+        display: block;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .welcome_flex1{
+        width: 90%;
+        margin: auto;
+    }
+    .welcome_flex2{
+        width: 95%;
+        margin: auto;
+    }
+    .btnalign{
+        width: 80%;
+        margin: auto;
+        
+    }
+    .welcome_button{
+        background-color: #ac3122 !important;
+        height: 40px !important;
+        color: white;
+        font-weight: bold;
+        outline: none;
+        height: 40px;
+        border-radius: 10px;
+        width: 100%;
+    }
+}

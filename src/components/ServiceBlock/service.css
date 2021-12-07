@@ -64,3 +64,25 @@
     height: 40px;
     align-items: center;
 }
+@media screen and (max-width: 960px) {
+    .Card_item{
+        width: 40%;
+        margin-right: 0px;
+        margin-top: 50px;
+        cursor: pointer;
+        background-color: rgba(43,40,76,.34);
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .Card_item{
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 50px;
+        cursor: pointer;
+        background-color: rgba(43,40,76,.34);
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+}

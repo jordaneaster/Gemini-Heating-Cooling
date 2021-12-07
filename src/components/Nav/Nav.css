@@ -151,7 +151,7 @@
       z-index: 20;
       width: 100%;
       margin: auto;
-      background-color: white;
+      background-color: #012f5e;
     }
     .nav-container {
       display: flex;
@@ -166,7 +166,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      border-top: 1px solid #fff;
+      border:none;
       position: absolute;
       top: 40px;
       left: -110%;
@@ -174,12 +174,13 @@
       transition: all 0.5s ease;
     }
     .nav-menu.active {
-      background: white;
+      background-color: #012f5e;
       left: 0px;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
-      width: 80%;
+      width: 90%;
+
     }
     .nav-item .active {
       color: #ffdd40;
@@ -189,6 +190,7 @@
       padding: 1.5rem;
       width: 100%;
       display: table;
+      color: white;
     }
   
     .nav-icon {
@@ -196,7 +198,9 @@
       align-items: center;
     }
     .nav-logo {
-      margin-left: 10px;
+      margin-left: 0px;
+      display: flex;
+    justify-content: center;
     }
     .Hamberger{
       margin-right: 10px;
@@ -205,10 +209,50 @@
     .mob_view{
       display: none;
     }
-    .Logo_image{
-      max-width: 160px;
-    }
     .Hamberger_item{
       width: 30px;
+    }
+
+    .gemini_flex{
+      width:100%;
+      margin: auto;
+      display: block;
+      align-items: center;
+    }
+    .Logo_imasge{
+      width: 40%;
+      display: none;
+  }
+    .schedules{
+      background-color: #ac3122 !important;
+      height: 40px !important;
+      border-radius: 10px !important;
+      outline: none;
+      color: white;
+    }
+    .daa{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+    }
+    .paraser{
+      font-size: 17px;
+      text-align: center;
+    }
+
+    .Logo_image{
+      width: 100%;
+    }
+    
+    .number{
+      color: #ac3122;
+      padding-left: 0px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .number:hover{
+      color: red;
     }
   }

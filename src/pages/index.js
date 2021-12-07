@@ -6,7 +6,9 @@ import './index.css'
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      <div className="boxs">
       <BlockComponents blocks={data.contentfulLandingPage.contentBlocks} />
+      </div>
     </Layout>
   )
 }

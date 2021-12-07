@@ -19,3 +19,40 @@
     margin: 0;
     text-align: center;
 }
+@media screen and (max-width: 960px) {
+    .partner_block{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .partsners{
+        font-weight: 300;
+        font-size: 30px;
+        text-shadow: 0 0 4px #fff;
+        padding-left: 10px;
+        color: #fff;
+        margin: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .partner_block{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .partsners{
+        font-weight: 300;
+        font-size: 30px;
+        text-shadow: 0 0 4px #fff;
+        padding-left: 10px;
+        color: #fff;
+        margin: 0;
+        text-align: center;
+    }
+}
