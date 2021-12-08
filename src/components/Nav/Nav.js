@@ -36,7 +36,7 @@ function NavBar() {
                                 <img className="Logo_image" src={Logo} alt="no logo" />
                             </span>
                         </Link>
-                        <a href="https://www.facebook.com" target="_blank">
+                        <a href="https://www.facebook.com/1zodiac/" target="_blank">
                             <img className="Logo_imasge" src={fb} alt="no logo" />
                         </a>
                     </div>
