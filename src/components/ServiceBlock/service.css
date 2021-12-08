@@ -1,5 +1,5 @@
 .services__block{
-    background-color: rgb(3, 1, 21);
+    background-color: #012f5e;
     width: 100%;
     padding-bottom: 40px;
     padding-top: 50px;
@@ -13,19 +13,68 @@
     padding-bottom: 20px;
 }
 .service_card_title{
-    font-size: 16px;
-    color: #9b9b9b;
+    font-size: 18px;
+    color: white;
     margin-bottom: 5px;
     padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+INPUT[type=checkbox]:focus
+{
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+INPUT[type=checkbox]
+{
+    background-color: #DDD;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+}
+.jaa{
+    font-size: 13px;
+    color: rgb(82, 79, 79);
+    font-weight: 300;
+    font-size: 18px;
+    text-shadow: 0 0 4px #fff;
+    color: #fff;
+}
+
+
+INPUT[type=checkbox]:checked
+{
+    background-color: #409fd6;
+    background: #409fd6 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+    margin-right: 15px;
+    margin-left: 10px;
 }
 .Card_item{
-    width: 25%;
-    margin-right: 20px;
+    max-width: 28%;
+    width: 30%;
+    margin-right: 10px;
     margin-top: 50px;
     cursor: pointer;
-    background-color: rgba(43,40,76,.34);
+    background-color: rgb(107 103 144 / 34%);
     padding-bottom: 20px;
     border-radius: 20px;
+}
+.ant-collapse{
+    background-color: rgb(107 103 144 / 34%) !important;
+    border: none !important;
+    color: white !important;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+    color: white !important;
+}
+.ant-collapse-content > .ant-collapse-content-box{
+    background-color: rgb(107 103 144 / 34%) !important;
 }
 
 .image_card{

@@ -31,7 +31,7 @@ function NavBar() {
         },
         {
             title: "CONTACT",
-            slug: "/Contact"
+            slug: "/contactus"
         },
     ]
     return (

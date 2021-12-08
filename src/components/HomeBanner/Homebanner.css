@@ -21,12 +21,23 @@
     font-size:55px;
     padding-left: 20px;
     width: 40%;
+    line-height: 60px;
+    font-weight: bold;
+}
+.boxsss{
+    position: absolute;
+    width: 30%;
+    height: 300px;
+    top: 200px;
+    left: 50px;
+    opacity: 0.9;
+    border-radius: 10px;
 }
 
 .btnbanner{
     position: absolute;
-    top: 75%;
-    left: 10%;
+    top:90%;
+    left: 20%;
     background-color: #ac3122 !important;
     color: white;
     font-weight: bold;
@@ -35,6 +46,32 @@
     border-radius: 10px;
     width: 230px;
 
+}
+
+@media screen and (min-width: 1550px) {
+    .boxsss{
+        position: absolute;
+        width: 30%;
+        height: 300px;
+        top: 200px;
+        left: 50px;
+        opacity: 0.9;
+        border-radius: 10px;
+    }
+    
+    .btnbanner{
+        position: absolute;
+        top: 120%;
+        left: 20%;
+        background-color: #ac3122 !important;
+        color: white;
+        font-weight: bold;
+        outline: none;
+        height: 40px;
+        border-radius: 10px;
+        width: 230px;
+    
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -47,9 +84,19 @@
         padding-left: 20px;
         width: 50%;
     }
+    .boxsss{
+        position: absolute;
+        width: 30%;
+        height: 500px;
+        top: 300px;
+        left: 50px;
+        opacity: 0.9;
+        border-radius: 10px;
+    }
+    
     .btnbanner{
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 10%;
         background-color: #ac3122 !important;
         color: white;
@@ -67,21 +114,31 @@
         height: 50vh;
     }
     
+    
 }
 
 @media screen and (max-width: 600px) {
     .mind{
         position: absolute;
-        top: 40%;
+        top: 20%;
         left: 0%;
         color: white;
         font-size:25px;
         padding-left: 20px;
         width: 80%;
     }
+    .boxsss{
+        position: absolute;
+        width: 50%;
+        height: 500px;
+        top: 250px;
+        left: 10px;
+        opacity: 0.9;
+        border-radius: 10px;
+    }
     .btnbanner{
         position: absolute;
-        top: 60%;
+        top: 40%;
         left: 10%;
         background-color: #ac3122 !important;
         color: white;

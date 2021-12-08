@@ -21,6 +21,12 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+    },
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -40,5 +46,16 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: 'gatsby-plugin-less',
+          options: {
+              lessOptions: {
+                  javascriptEnabled: true,
+                 modifyVars: {
+                     'primary-color': '#000000'
+                },
+             },
+         },
+  },
   ],
 };

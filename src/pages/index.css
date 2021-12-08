@@ -5,3 +5,78 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+.g{
+    background-color: #33475b;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.headings{
+    font-size: 55px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0 0 4px #fff;
+}
+.flex_contact{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.wid{
+    width: 40%;
+    margin-right: 20px;
+
+}
+.aka{
+    width: 50%;
+}
+.fill{
+    color: #33475b;
+    font-size: 32px;
+}
+.we{
+    font-size: 18px;
+}
+.central{
+    color: brown;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+}
+.flex2s{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(209, 205, 205);
+    border-radius: 25px;
+    padding: 20px;
+}
+.we{
+    font-size: 21px;
+}
+.inp{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+.nam{
+    margin: 0;
+}
+.contactUsbtn{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #012f5e;
+    color: white;
+    outline: none;
+    height: 40px;
+}

@@ -2,6 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import './Homebanner.css'
 import image from '../../images/6259536.jpg'
+import images from '../../images/ka.jpeg'
+
 import { getImage } from "gatsby-plugin-image";
 import Partner from '../partnerLogo/Partner'
 export const HomeBanner = ({ block }) => {
@@ -11,8 +13,12 @@ export const HomeBanner = ({ block }) => {
     <>
       <section className="home__banner">
         <img className="imagess" src={image} />
-        <h1 className="mind">Quality Heating & Cooling Services For Your Peace of Mind</h1>
-        <button className="btnbanner">{block.button.title}</button>
+        <div className="boxsss">
+          <img style={{ width: '100%' }} src={images} />
+          <a href={block.button.slug} target="_blank">
+            <button className="btnbanner">{block.button.title}</button>
+          </a>
+        </div>
       </section>
       <Partner />
     </>

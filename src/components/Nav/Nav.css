@@ -37,6 +37,7 @@
     text-align: center;
     margin-right: 2rem;
     cursor: pointer;
+    margin: 0px;
   }
   a:-webkit-any-link {
       text-decoration: none !important;
