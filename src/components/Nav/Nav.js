@@ -22,14 +22,6 @@ function NavBar() {
             slug: "/services"
         },
         {
-            title: "PHOTOS",
-            slug: "/photos"
-        },
-        {
-            title: "REVIEWS",
-            slug: "/reviews"
-        },
-        {
             title: "CONTACT",
             slug: "/contactus"
         },
@@ -58,7 +50,21 @@ function NavBar() {
                 <div className="nav-container">
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         {navItems.map((el, i) => (
-                            <Link to={`${el.slug}`} key={i}>
+                            <Link to={`${el.title == "HOME" || el.title == "CONTACT" ? el.slug : "#" }`} key={i} onClick={() => {
+                                if(el.title == "ABOUT"){
+                                    window.scrollTo({
+                                        top: 1400,
+                                        left: 0,
+                                        behavior: 'smooth'
+                                      });
+                                }else if(el.title == "SERVICES"){
+                                    window.scrollTo({
+                                        top: 2300,
+                                        left: 0,
+                                        behavior: 'smooth'
+                                      });
+                                }
+                            }}>
                                 <li className="nav-item">
                                     <span
                                         className="nav-links"
@@ -70,7 +76,13 @@ function NavBar() {
                             </Link>
                         ))}
                     </ul>
-                    <button className="schedules">Request Quote</button>
+                    <button className="schedules" onClick={() => {
+                        window.scrollTo({
+                            top: 3900,
+                            left: 0,
+                            behavior: 'smooth'
+                          });
+                    }}>Request Quote</button>
                     <div className="nav-icon" onClick={handleClick}>
                         <div className={`Hamberger ${click ? "fas fa-times" : "fas fa-bars"}`}>
                             <img src={Hamberger} className="Hamberger_item" alt="Hamberger menu" />

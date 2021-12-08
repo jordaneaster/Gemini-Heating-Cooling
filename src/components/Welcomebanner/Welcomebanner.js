@@ -14,7 +14,13 @@ export const WelcomeBanner = ({ block }) => {
                 <div className="welcome_flex2">
                     <p className="block__description">{block.description.description}</p>
                     <div className="btnalign">
-                    <button className="welcome_button">
+                    <button  onClick={() => {
+                       window.scrollTo({
+                        top: 3850,
+                        left: 0,
+                        behavior: 'smooth'
+                      });
+                   }} className="welcome_button">
                         {block.cta[0].title}
                     </button>
                     </div>

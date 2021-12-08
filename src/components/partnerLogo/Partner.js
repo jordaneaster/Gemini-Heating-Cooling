@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import './partner.css'
-import Banner from '../ScheduleBanner/Banner'
+import Banner from '../FinancingBanner/Banner'
 const Partner = () => {
     const datas = useStaticQuery(graphql`
     query MyQuerhhy {

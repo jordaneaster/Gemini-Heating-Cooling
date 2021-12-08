@@ -36,7 +36,7 @@ const getdata = datas.allContentfulScheduleServiceEstimate.nodes[0]
                    <p className="para_bannee">{getdata.description.description}</p>
                </div>
                <div>
-                   <button className="btnnanner">{getdata.button.title}</button>
+                   <button  className="btnnanner">{getdata.button.title}</button>
                </div>
             </div>
         </section>

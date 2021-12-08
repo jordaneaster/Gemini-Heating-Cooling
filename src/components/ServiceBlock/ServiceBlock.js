@@ -3,7 +3,8 @@ import { graphql, Link } from "gatsby";
 import { Collapse } from 'antd';
 import './service.css'
 import Estimate from '../EstimateBanner/Estimatebanner'
-import Banner from '../FinancingBanner/Banner'
+import Banner from '../EstimateBanner/Estimatebanner'
+import ContactUs from '../contactSection/ContactSection'
 const ServiceBlock = ({ block }) => {
     const { Panel } = Collapse;
     return (
@@ -31,6 +32,7 @@ const ServiceBlock = ({ block }) => {
                 </div>
             </section>
             <Estimate />
+            <ContactUs />
         </>
     )
 }

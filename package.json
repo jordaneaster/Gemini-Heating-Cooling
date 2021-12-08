@@ -21,6 +21,7 @@
     "antd": "^4.17.3",
     "babel-plugin-import": "^1.13.3",
     "gatsby": "^4.3.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-image": "^2.3.0",
     "gatsby-plugin-less": "^6.3.0",

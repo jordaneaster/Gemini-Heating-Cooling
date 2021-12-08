@@ -47,6 +47,12 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100
+      }
+    },
+    {
       resolve: 'gatsby-plugin-less',
           options: {
               lessOptions: {
