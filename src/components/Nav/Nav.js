@@ -36,13 +36,13 @@ function NavBar() {
                                 <img className="Logo_image" src={Logo} alt="no logo" />
                             </span>
                         </Link>
-                        <a href="https://www.facebook.com" target="_blank">
+                        <a href="https://www.facebook.com/1zodiac/" target="_blank">
                             <img className="Logo_imasge" src={fb} alt="no logo" />
                         </a>
                     </div>
 
                     <div className="daa">
-                        <p className="paraser">Servicing <span style={{ color: '#ac3122' }}>Northeast Ohio,</span> Call Now<br /><a href="tel:2167319400" className="number">(216) 731-9400</a></p>
+                        <p className="paraser">Servicing <span style={{ color: '#ac3122' }}>Greater Cincinnati,</span> Call Now!<br /><a href="tel:" className="number">(513) 608-9137</a></p>
                     </div>
                 </div>
             </div>

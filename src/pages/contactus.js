@@ -57,7 +57,7 @@ const ContactUs = () => {
         <Layout>
             <div >
                 <div className="g">
-                    <h1 className="headings">Contact Central Heating & Air Conditioning</h1>
+                    <h1 className="headings">Gemini Heating & Cooling - Greater Cincinnati & Northern Kentucky's finest Hvac Provider</h1>
                 </div>
                 <div className="flex_contact">
                     <div className="aka">
@@ -84,16 +84,15 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="wid">
-                        <h1 className="fill">Fill Out the Form, Email, Call ... We're here to help!  </h1>
-                        <p className="we">We're here to help your with your heating and cooling service, repair, and installation needs. </p>
-                        <p className="central">Central Heating & Air Conditioning Co.</p>
-                        <p className="we">Heating and Cooling Service, and Installation
-                        <br />243 Richmond Rd.
-                        <br />Richmond Hts.
+                    <h1 className="fill">Servicing Every Brand Under the Stars! Est. 2017</h1>
+                        <p className="we">We're here to help your with all of your heating and cooling service, repair, and installation needs. </p>
+                        <p className="central">Gemini Heating & Cooling.</p>
+                        <p className="we">
+                        <br />4110 Autumn Hill ln.
+                        <br />Hamilton.
                         <br />Ohio
-                        <br />44143<br />
-                        USA</p>
-                        <p className="we"><a href="tel:2167319400">Local: (216) 731-9400</a></p>
+                        <br />45011</p>
+                        <p className="we"><a href="tel:5136089137">(513) 608-9137</a></p>
                     </div>
                 </div>
             </div>
