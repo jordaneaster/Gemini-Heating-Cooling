@@ -4,7 +4,10 @@ import { Collapse } from 'antd';
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import './service.css'
 import Estimate from '../EstimateBanner/Estimatebanner'
-import Contact from '../contactSection/ContactSection'
+import Banner from '../EstimateBanner/Estimatebanner'
+import ContactUs from '../contactSection/ContactSection'
+import Review from '../Reviews/Review'
+
 const ServiceBlock = ({ block }) => {
     const { Panel } = Collapse;
     const image = getImage(block.serviceActionImages)
@@ -36,7 +39,8 @@ const ServiceBlock = ({ block }) => {
                 </div>
             </section>
             <Estimate />
-           <Contact/>
+            <Review />
+            <ContactUs />
         </>
     )
 }
