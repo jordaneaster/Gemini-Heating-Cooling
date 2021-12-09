@@ -13,7 +13,6 @@ const ServiceBlock = ({ block }) => {
     const image = getImage(block.serviceActionImages)
     return (
         <>
-            
             <section className="services__block">
                 <h1 className="title_banner">{block.title}</h1>
                 <div className="card">

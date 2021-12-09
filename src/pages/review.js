@@ -8,48 +8,48 @@ import { graphql } from "gatsby"
 import nate from '../images/logos/Nate-Certification.png'
 import epa from '../images/logos/epa.png'
 const Review = ({ data }) => {
-  const [userInfo, setUserInfo] = useState({
-    title:"",
-    message:"",
-    rating:"",
-})
-const openNotificationWithIcon = type => {
-    notification[type]({
-        message: 'Gemini Notification!',
-        description:
-            'You have successfully submitted your information. Thank You!',
-    });
-};
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-}
-const handleOnchange = e => {
-    setUserInfo({
-        ...userInfo,
-        [e.target.name]: e.target.value
+    const [userInfo, setUserInfo] = useState({
+        title: "",
+        message: "",
+        rating: "",
     })
-}
-
-const handleSubmit = e => {
-    e.preventDefault();
-    fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...userInfo })
-    })
-        .then(() => {
-            openNotificationWithIcon('success')
-            setUserInfo({
-                title: "",
-                message: "",
-                rating: ""
-            })
+    const openNotificationWithIcon = type => {
+        notification[type]({
+            message: 'Gemini Notification!',
+            description:
+                'You have successfully submitted your information. Thank You!',
+        });
+    };
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
+    const handleOnchange = e => {
+        setUserInfo({
+            ...userInfo,
+            [e.target.name]: e.target.value
         })
-        .catch(error => alert(error));
+    }
 
-};
+    const handleSubmit = e => {
+        e.preventDefault();
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...userInfo })
+        })
+            .then(() => {
+                openNotificationWithIcon('success')
+                setUserInfo({
+                    title: "",
+                    message: "",
+                    rating: ""
+                })
+            })
+            .catch(error => alert(error));
+
+    };
     const getdata = data.allContentfulCustomerReviews.nodes
     return (
         <Layout>
@@ -70,41 +70,53 @@ const handleSubmit = e => {
                                 <h1 className="tiat">{el.title}</h1>
                                 <p>{el.review.review}</p>
                             </div>
-                          
                         </div>
-                        
                     ))}
-                     <div className="leave_review">
-                            <h1 className="west">Feeback Is Always Welcomed, Leave A Review!</h1>
-                                <form className="review_form" name="contact" method="post" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-honeypot="bot-field">
-                                <input type="hidden" name="form-name" value="contact" />
-                                <input name="phone" value={userInfo.rating} onChange={(e) => handleOnchange(e)} placeholder="Enter Rating 1-5" className="inp" type="number" />
-                                <input name="title" value={userInfo.title} onChange={(e) => handleOnchange(e)} placeholder="Title..." className="inp" type="text" />
-                                <textarea name="message" value={userInfo.message} onChange={(e) => handleOnchange(e)} placeholder="Leave us a review!" className="message_inp" type="text"/>
-                                <button type="submit" className="contactUsbtn">Submit</button>
-                                </form>
-                                <div>
+                    <div className="flex_contact2">
+                        <div className="flex_review">
+                            <h1 className="alwwys">Always Welcome for Feedback</h1>
+                            <div>
+                                <img width="37%" src={nate} />
+                                <img width="20%" src={epa} />
                             </div>
-                      </div>
-               
+                        </div>
+                        <div className="akas">
+                            <div className="flex2s">
+                                <div>
+                                    <h1 className="alwwys">Feeback Form</h1>
+                                </div>
+                                <div>
+                                    <form className="review_form" name="contact" method="post" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-honeypot="bot-field">
+                                        <input type="hidden" name="form-name" value="contact" />
+                                        <input name="phone" value={userInfo.rating} onChange={(e) => handleOnchange(e)} placeholder="Enter Rating 1-5" className="inp" type="number" />
+                                        <input name="title" value={userInfo.title} onChange={(e) => handleOnchange(e)} placeholder="Title..." className="inp" type="text" />
+                                        <textarea row="3" name="message" value={userInfo.message} onChange={(e) => handleOnchange(e)} placeholder="Leave us a review!" className="inp" type="text" />
+                                        <button type="submit" className="contactUsbtn">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </Layout>
     )
 }
 export const query = graphql`
 query cusery {
-    allContentfulCustomerReviews {
-      nodes {
-        rating
+                    allContentfulCustomerReviews {
+                    nodes {
+                    rating
         title
         image {
-          file {
-            url
-          }
+                    file {
+                    url
+                }
         }
         review {
-          review
-        }
+                    review
+                }
       }
     }
   }

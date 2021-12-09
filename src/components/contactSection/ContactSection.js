@@ -58,6 +58,7 @@ const ContactUs = () => {
     };
     return (
             <div >
+                <h1 className="c_us">Contact US</h1>
                 <div className="flex_contact">
                     <div className="aka">
                         <div className="flex2s">
@@ -72,7 +73,7 @@ const ContactUs = () => {
                                 <input name="state" value={userInfo.state} onChange={(e) => handleOnchange(e)} placeholder="State" className="inp" type="text" />
                                 <input name="zip" value={userInfo.zip} onChange={(e) => handleOnchange(e)} placeholder="Zip" className="inp" type="text" />
                                 <input name="phone" value={userInfo.phone} onChange={(e) => handleOnchange(e)} placeholder="Phone" className="inp" type="number" />
-                                <textarea name="message" value={userInfo.message} onChange={(e) => handleOnchange(e)} placeholder="Leave a detailed message!" className="message_inp" type="text"/>
+                                <textarea row="3" name="message" value={userInfo.message} onChange={(e) => handleOnchange(e)} placeholder="Leave a detailed message!" className="inp" type="text"/>
                                 <button type="submit" className="contactUsbtn">Submit</button>
                                 </form>
                                
