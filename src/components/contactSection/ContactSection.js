@@ -58,7 +58,6 @@ const ContactUs = () => {
     };
     return (
             <div >
-                <h1 className="c_us">Contact US</h1>
                 <div className="flex_contact">
                     <div className="aka">
                         <div className="flex2s">
@@ -80,7 +79,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="wid">
-                        <h1 className="fill">Servicing Every Brand Under the Stars! Est. 2017</h1>
+                        <h1 className="fill"> We Service Every Brand! Est. 2017</h1>
                         <p className="we">We're here to help your with all of your heating and cooling service, repair, and installation needs. </p>
                         <p className="central">Gemini Heating & Cooling.</p>
                         <p className="we">

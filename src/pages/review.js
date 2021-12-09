@@ -55,7 +55,7 @@ const Review = ({ data }) => {
         <Layout>
             <div>
                 <div className="g">
-                    <h1 className="headings">Our Customer Reviews</h1>
+                    <h1 className="headings">Verified Customer Reviews</h1>
                 </div>
                 <div className="faawa">
                     {getdata.map(el => (
