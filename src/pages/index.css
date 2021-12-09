@@ -79,6 +79,7 @@
     color: white;
     outline: none;
     height: 40px;
+    border-radius: 11px;
 }
 @media screen and (max-width: 960px) {
     .flex_contact{
@@ -111,5 +112,17 @@
         font-weight: 300;
         text-shadow: 0 0 4px #fff;
     }
+
+    .message_inp{
+        height:200px;
+        width: 515px;
+    }
+
+    @media screen and (max-width: 600px) {
+       .message_inp {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
     
 }

@@ -26,7 +26,7 @@ const ServiceBlock = ({ block }) => {
                                 <Collapse>
                                     <Panel header="More Details" key={index}>
                                         <p >{service.description.description}</p>
-                                        <GatsbyImage className="details_image" image={image} alt="description image" aria-label="image"/>
+                                        <img className="image_card" src={service.serviceActionImages.file}/>
                                     </Panel>
                                 </Collapse>
                             </div>
@@ -53,7 +53,9 @@ fragment ServiceBlock on ContentfulServicesBlock {
         }
         slug
         serviceActionImages {
-          gatsbyImageData(layout: FIXED, quality: 10)
+         file {
+             url
+         }
         }
         serviceCoverImage {
           gatsbyImageData(layout: FIXED, quality: 10)
