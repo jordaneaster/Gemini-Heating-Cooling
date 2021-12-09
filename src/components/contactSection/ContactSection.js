@@ -7,6 +7,7 @@ const ContactUs = () => {
                     <div className="aka">
                         <div className="flex2s">
                                 <h1 className="wes">How Can We Help You With Your HVAC Needs?</h1>
+                                <form>
                                 <p className="nam">Name*</p>
                                 <input className="inp" type="text" />
                                 <p className="nam">Email*</p>
@@ -21,20 +22,21 @@ const ContactUs = () => {
                                 <input className="inp" type="text" />
                                 <p className="nam">Phone*</p>
                                 <input className="inp" type="number" />
-                                <button className="contactUsbtn">Click To Contact US</button>
+                                <button className="contactUsbtn" type="submit">Send</button>
+                                </form>
+                               
                         </div>
                     </div>
                     <div className="wid">
-                        <h1 className="fill">Fill Out the Form, Email, Call ... We're here to help!  </h1>
-                        <p className="we">We're here to help your with your heating and cooling service, repair, and installation needs. </p>
-                        <p className="central">Central Heating & Air Conditioning Co.</p>
-                        <p className="we">Heating and Cooling Service, and Installation
-                        <br />243 Richmond Rd.
-                        <br />Richmond Hts.
+                        <h1 className="fill">We're here to help!  </h1>
+                        <p className="we">We're here to help your with all of your heating and cooling service, repair, and installation needs. </p>
+                        <p className="central">Gemini Heating & Cooling.</p>
+                        <p className="we">Servicing Every Brand Under the Stars!
+                        <br />4110 Autumn Hill ln.
+                        <br />Hamilton.
                         <br />Ohio
-                        <br />44143<br />
-                        USA</p>
-                        <p className="we"><a href="tel:2167319400">Local: (216) 731-9400</a></p>
+                        <br />45011</p>
+                        <p className="we"><a href="tel:5136089137">Local: (513) 608-9137</a></p>
                     </div>
                 </div>
             </div>

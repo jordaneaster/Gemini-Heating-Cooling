@@ -76,6 +76,10 @@ INPUT[type=checkbox]:checked
 .ant-collapse-content > .ant-collapse-content-box{
     background-color: rgb(107 103 144 / 34%) !important;
 }
+.details_image{
+    width: 200px;
+    height: 200px;
+}
 
 .image_card{
     width: 150px;

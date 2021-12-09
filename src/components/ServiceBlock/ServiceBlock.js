@@ -1,12 +1,13 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { Collapse } from 'antd';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import './service.css'
 import Estimate from '../EstimateBanner/Estimatebanner'
-import Banner from '../EstimateBanner/Estimatebanner'
-import ContactUs from '../contactSection/ContactSection'
+import Banner from '../FinancingBanner/Banner'
 const ServiceBlock = ({ block }) => {
     const { Panel } = Collapse;
+    const image = getImage(block.serviceActionImages)
     return (
         <>
             <Banner />
@@ -17,6 +18,7 @@ const ServiceBlock = ({ block }) => {
                         return (
                             <div className="Card_item">
                                 <img className="image_card" src={service.serviceCoverImage.gatsbyImageData.images.fallback.src} />
+                               
                                 <h1 className="service_card_title">{service.title}</h1>
                                 {service.serviceChecklist.checklist.map((el, i) => (
                                     <p className="jaa"><input checked type="checkbox" />{el.listItem}</p>
@@ -24,15 +26,16 @@ const ServiceBlock = ({ block }) => {
                                 <Collapse>
                                     <Panel header="More Details" key={index}>
                                         <p >{service.description.description}</p>
+                                        <GatsbyImage className="details_image" image={image} alt="description image" aria-label="image"/>
                                     </Panel>
                                 </Collapse>
                             </div>
+                            
                         )
                     })}
                 </div>
             </section>
             <Estimate />
-            <ContactUs />
         </>
     )
 }

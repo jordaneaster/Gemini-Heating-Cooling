@@ -42,7 +42,7 @@ function NavBar() {
                     </div>
 
                     <div className="daa">
-                        <p className="paraser">Servicing <span style={{ color: '#ac3122' }}>Northeast Ohio,</span> Call Now<br /><a href="tel:2167319400" className="number">(216) 731-9400</a></p>
+                        <p className="paraser">Servicing <span style={{ color: '#ac3122' }}>Greater Cincinnati,</span> Call Now!<br /><a href="tel:" className="number">(513) 608-9137</a></p>
                     </div>
                 </div>
             </div>
