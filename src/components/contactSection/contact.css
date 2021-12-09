@@ -1,0 +1,12 @@
+.message_inp{
+    height: 100px;
+    width: 515px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .message_inp{
+      width: 100%;
+      margin-top: 0;
+    }
+  }

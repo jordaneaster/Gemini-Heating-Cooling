@@ -79,6 +79,7 @@
     color: white;
     outline: none;
     height: 40px;
+    border-radius: 11px;
 }
 .faawa{
     display: flex;
@@ -172,5 +173,18 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         margin-bottom: 20px;
     }
+
+    .message_inp{
+        height:200px;
+        width: 515px;
+    }
+
+    @media screen and (max-width: 600px) {
+       .message_inp {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+
     
 }

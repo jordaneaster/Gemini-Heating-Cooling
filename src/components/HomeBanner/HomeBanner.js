@@ -1,9 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import './Homebanner.css'
-import image from '../../images/6259536.jpg'
+import image from '../../images/bailey-anselme-Bkp3gLygyeA-unsplash.jpg'
 import images from '../../images/ka.jpeg'
-
 import { getImage } from "gatsby-plugin-image";
 import Partner from '../partnerLogo/Partner'
 export const HomeBanner = ({ block }) => {

@@ -30,6 +30,7 @@
     background: #012f5e;
     color: white;
     outline: none;
+    border-radius: 11px;
 }
 @media screen and (max-width: 960px) {
     .banners_block{

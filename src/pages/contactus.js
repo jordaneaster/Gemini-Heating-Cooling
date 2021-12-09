@@ -6,17 +6,19 @@ const ContactUs = () => {
     const [userInfo, setUserInfo] = useState({
         name: "",
         email: "",
-        address: "",
+        address_line_1: "",
+        address_line_2: "",
         city: "",
         state: "",
         zip: "",
-        phone: ""
+        phone: "",
+        message: ""
     })
     const openNotificationWithIcon = type => {
         notification[type]({
             message: 'Gemini Notification!',
             description:
-                'You have Successfully submit your information Thanks you!',
+                'You have successfully submitted your information. Thank You!',
         });
     };
     const encode = (data) => {
@@ -43,11 +45,13 @@ const ContactUs = () => {
                 setUserInfo({
                     name: "",
                     email: "",
-                    address: "",
+                    address_line_1: "",
+                    address_line_2: "",
                     city: "",
                     state: "",
                     zip: "",
-                    phone: ""
+                    phone: "",
+                    message: ""
                 })
             })
             .catch(error => alert(error));
@@ -57,7 +61,7 @@ const ContactUs = () => {
         <Layout>
             <div >
                 <div className="g">
-                    <h1 className="headings">Contact Central Heating & Air Conditioning</h1>
+                    <h1 className="headings">Gemini Heating & Cooling - Greater Cincinnati & Northern Kentucky's finest Hvac Provider</h1>
                 </div>
                 <div className="flex_contact">
                     <div className="aka">
@@ -65,35 +69,29 @@ const ContactUs = () => {
                             <h1 className="wes">How Can We Help You With Your HVAC Needs?</h1>
                             <form name="contact" method="post" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-honeypot="bot-field">
                                 <input type="hidden" name="form-name" value="contact" />
-                                <label htmlFor="name" className="nam">Name*</label>
-                                <input name="name" value={userInfo.name} onChange={(e) => handleOnchange(e)} placeholder="Type your Full Name..." className="inp" type="text" />
-                                <label htmlFor="email" className="nam">Email*</label>
-                                <input name="email" value={userInfo.email} onChange={(e) => handleOnchange(e)} placeholder="Type your Email..." className="inp" type="text" />
-                                <label htmlFor="address" className="nam">Address*</label>
-                                <input name="address" value={userInfo.address} onChange={(e) => handleOnchange(e)} placeholder="Type your Address..." className="inp" type="text" />
-                                <label htmlFor="city" className="nam">City*</label>
-                                <input name="city" value={userInfo.city} onChange={(e) => handleOnchange(e)} placeholder="Type your City..." className="inp" type="text" />
-                                <label htmlFor="state" className="nam">State*</label>
-                                <input name="state" value={userInfo.state} onChange={(e) => handleOnchange(e)} placeholder="Type your State..." className="inp" type="text" />
-                                <label htmlFor="zip" className="nam">Zip*</label>
-                                <input name="zip" value={userInfo.zip} onChange={(e) => handleOnchange(e)} placeholder="Type your Zip..." className="inp" type="text" />
-                                <label htmlFor="phone" className="nam">Phone*</label>
-                                <input name="phone" value={userInfo.phone} onChange={(e) => handleOnchange(e)} placeholder="Type your Phone..." className="inp" type="number" />
-                                <button type="submit" className="contactUsbtn">Click To Contact US</button>
+                                <input name="name" value={userInfo.name} onChange={(e) => handleOnchange(e)} placeholder="Full Name" className="inp" type="text" />
+                                <input name="email" value={userInfo.email} onChange={(e) => handleOnchange(e)} placeholder="Email" className="inp" type="text" />
+                                <input name="address" value={userInfo.address_line_1} onChange={(e) => handleOnchange(e)} placeholder="Address Line 1" className="inp" type="text" />
+                                <input name="address" value={userInfo.address_line_2} onChange={(e) => handleOnchange(e)} placeholder="Address Line 2" className="inp" type="text" />
+                                <input name="city" value={userInfo.city} onChange={(e) => handleOnchange(e)} placeholder="City" className="inp" type="text" />
+                                <input name="state" value={userInfo.state} onChange={(e) => handleOnchange(e)} placeholder="State" className="inp" type="text" />
+                                <input name="zip" value={userInfo.zip} onChange={(e) => handleOnchange(e)} placeholder="Zip" className="inp" type="text" />
+                                <input name="phone" value={userInfo.phone} onChange={(e) => handleOnchange(e)} placeholder="Phone" className="inp" type="number" />
+                                <textarea name="message" value={userInfo.message} onChange={(e) => handleOnchange(e)} placeholder="Leave a detailed message!" className="message_inp" type="text"/>
+                                <button type="submit" className="contactUsbtn">Submit</button>
                             </form>
                         </div>
                     </div>
                     <div className="wid">
-                        <h1 className="fill">Fill Out the Form, Email, Call ... We're here to help!  </h1>
-                        <p className="we">We're here to help your with your heating and cooling service, repair, and installation needs. </p>
-                        <p className="central">Central Heating & Air Conditioning Co.</p>
-                        <p className="we">Heating and Cooling Service, and Installation
-                        <br />243 Richmond Rd.
-                        <br />Richmond Hts.
+                    <h1 className="fill">Servicing Every Brand Under the Stars! Est. 2017</h1>
+                        <p className="we">We're here to help your with all of your heating and cooling service, repair, and installation needs. </p>
+                        <p className="central">Gemini Heating & Cooling.</p>
+                        <p className="we">
+                        <br />4110 Autumn Hill ln.
+                        <br />Hamilton.
                         <br />Ohio
-                        <br />44143<br />
-                        USA</p>
-                        <p className="we"><a href="tel:2167319400">Local: (216) 731-9400</a></p>
+                        <br />45011</p>
+                        <p className="we"><a href="tel:5136089137">(513) 608-9137</a></p>
                     </div>
                 </div>
             </div>
