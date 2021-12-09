@@ -25,6 +25,10 @@ function NavBar() {
             title: "CONTACT",
             slug: "/contactus"
         },
+        {
+            title: "REVIEW",
+            slug: "/review"
+        },
     ]
     return (
         <>
@@ -50,7 +54,7 @@ function NavBar() {
                 <div className="nav-container">
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         {navItems.map((el, i) => (
-                            <Link to={`${el.title == "HOME" || el.title == "CONTACT" ? el.slug : "#" }`} key={i} onClick={() => {
+                            <Link to={`${el.title == "HOME" || el.title == "CONTACT" || el.title == "REVIEW" ? el.slug : "#" }`} key={i} onClick={() => {
                                 if(el.title == "ABOUT"){
                                     window.scrollTo({
                                         top: 1400,

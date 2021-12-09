@@ -80,6 +80,48 @@
     outline: none;
     height: 40px;
 }
+.faawa{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.imgresol{
+    width: 28%;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.imgesa{
+    width: 200px;
+    height: 200px;
+}
+.imgdic{
+    width: 100%;
+    text-align: center;
+}
+.tiat{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.imgdic2{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.imgdic3{
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+}
+.star{
+    font-size: 30px;
+}
+
 @media screen and (max-width: 960px) {
     .flex_contact{
         display: block;
@@ -110,6 +152,25 @@
         color: white;
         font-weight: 300;
         text-shadow: 0 0 4px #fff;
+    }
+
+
+    .faawa{
+        display: block;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .imgresol{
+        width: 90%;
+        margin: auto;
+        background: rgb(255, 255, 255);
+        height: 450px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 20px;
     }
     
 }
