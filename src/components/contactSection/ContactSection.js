@@ -66,8 +66,8 @@ const ContactUs = () => {
                                 <input type="hidden" name="form-name" value="contact" />
                                 <input name="name" value={userInfo.name} onChange={(e) => handleOnchange(e)} placeholder="Full Name" className="inp" type="text" />
                                 <input name="email" value={userInfo.email} onChange={(e) => handleOnchange(e)} placeholder="Email" className="inp" type="text" />
-                                <input name="address" value={userInfo.address_line_1} onChange={(e) => handleOnchange(e)} placeholder="Address Line 1" className="inp" type="text" />
-                                <input name="address" value={userInfo.address_line_2} onChange={(e) => handleOnchange(e)} placeholder="Address Line 2" className="inp" type="text" />
+                                <input name="address_line_1" value={userInfo.address_line_1} onChange={(e) => handleOnchange(e)} placeholder="Address Line 1" className="inp" type="text" />
+                                <input name="address_line_2" value={userInfo.address_line_2} onChange={(e) => handleOnchange(e)} placeholder="Address Line 2" className="inp" type="text" />
                                 <input name="city" value={userInfo.city} onChange={(e) => handleOnchange(e)} placeholder="City" className="inp" type="text" />
                                 <input name="state" value={userInfo.state} onChange={(e) => handleOnchange(e)} placeholder="State" className="inp" type="text" />
                                 <input name="zip" value={userInfo.zip} onChange={(e) => handleOnchange(e)} placeholder="Zip" className="inp" type="text" />
