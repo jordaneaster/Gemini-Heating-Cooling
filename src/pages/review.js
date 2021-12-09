@@ -37,7 +37,7 @@ const Review = ({ data }) => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...userInfo })
+            body: encode({ "form-name": "review", ...userInfo })
         })
             .then(() => {
                 openNotificationWithIcon('success')
@@ -74,7 +74,7 @@ const Review = ({ data }) => {
                     ))}
                     <div className="flex_contact2">
                         <div className="flex_review">
-                            <h1 className="alwwys">Always Welcome for Feedback</h1>
+                            <h1 className="alwwys">Satisfaction Guaranteed!</h1>
                             <div>
                                 <img width="37%" src={nate} />
                                 <img width="20%" src={epa} />
@@ -83,13 +83,13 @@ const Review = ({ data }) => {
                         <div className="akas">
                             <div className="flex2s">
                                 <div>
-                                    <h1 className="alwwys">Feeback Form</h1>
+                                    <h1 className="alwwys">Please Leave Us A Review!</h1>
                                 </div>
                                 <div>
-                                    <form className="review_form" name="contact" method="post" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-honeypot="bot-field">
+                                    <form className="review_form" name="review" method="post" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-honeypot="bot-field">
                                         <input type="hidden" name="form-name" value="contact" />
-                                        <input name="phone" value={userInfo.rating} onChange={(e) => handleOnchange(e)} placeholder="Enter Rating 1-5" className="inp" type="number" />
-                                        <input name="title" value={userInfo.title} onChange={(e) => handleOnchange(e)} placeholder="Title..." className="inp" type="text" />
+                                        <input name="rating" value={userInfo.rating} onChange={(e) => handleOnchange(e)} placeholder="Enter Rating 1-5" className="inp" type="text" />
+                                        <input name="title" value={userInfo.title} onChange={(e) => handleOnchange(e)} placeholder="Title" className="inp" type="text" />
                                         <textarea row="3" name="message" value={userInfo.message} onChange={(e) => handleOnchange(e)} placeholder="Leave us a review!" className="inp" type="text" />
                                         <button type="submit" className="contactUsbtn">Submit</button>
                                     </form>
