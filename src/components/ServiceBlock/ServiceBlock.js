@@ -5,6 +5,7 @@ import './service.css'
 import Estimate from '../EstimateBanner/Estimatebanner'
 import Banner from '../EstimateBanner/Estimatebanner'
 import ContactUs from '../contactSection/ContactSection'
+import Review from '../Reviews/Review'
 const ServiceBlock = ({ block }) => {
     const { Panel } = Collapse;
     return (
@@ -32,6 +33,7 @@ const ServiceBlock = ({ block }) => {
                 </div>
             </section>
             <Estimate />
+            <Review />
             <ContactUs />
         </>
     )
