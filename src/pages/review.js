@@ -1,9 +1,55 @@
 import * as React from "react"
+import { useState } from "react";
+import { notification } from "antd";
 import Layout from '../components/Layout/Layout'
 import './index.css'
 import { Rate } from 'antd';
 import { graphql } from "gatsby"
+import nate from '../images/logos/Nate-Certification.png'
+import epa from '../images/logos/epa.png'
 const Review = ({ data }) => {
+  const [userInfo, setUserInfo] = useState({
+    title:"",
+    message:"",
+    rating:"",
+})
+const openNotificationWithIcon = type => {
+    notification[type]({
+        message: 'Gemini Notification!',
+        description:
+            'You have successfully submitted your information. Thank You!',
+    });
+};
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+const handleOnchange = e => {
+    setUserInfo({
+        ...userInfo,
+        [e.target.name]: e.target.value
+    })
+}
+
+const handleSubmit = e => {
+    e.preventDefault();
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...userInfo })
+    })
+        .then(() => {
+            openNotificationWithIcon('success')
+            setUserInfo({
+                title: "",
+                message: "",
+                rating: ""
+            })
+        })
+        .catch(error => alert(error));
+
+};
     const getdata = data.allContentfulCustomerReviews.nodes
     return (
         <Layout>
@@ -24,9 +70,23 @@ const Review = ({ data }) => {
                                 <h1 className="tiat">{el.title}</h1>
                                 <p>{el.review.review}</p>
                             </div>
+                          
                         </div>
+                        
                     ))}
-                </div>
+                     <div className="leave_review">
+                            <h1 className="west">Feeback Is Always Welcomed, Leave A Review!</h1>
+                                <form className="review_form" name="contact" method="post" onSubmit={(e) => handleSubmit(e)} data-netlify="true" data-netlify-honeypot="bot-field">
+                                <input type="hidden" name="form-name" value="contact" />
+                                <input name="phone" value={userInfo.rating} onChange={(e) => handleOnchange(e)} placeholder="Enter Rating 1-5" className="inp" type="number" />
+                                <input name="title" value={userInfo.title} onChange={(e) => handleOnchange(e)} placeholder="Title..." className="inp" type="text" />
+                                <textarea name="message" value={userInfo.message} onChange={(e) => handleOnchange(e)} placeholder="Leave us a review!" className="message_inp" type="text"/>
+                                <button type="submit" className="contactUsbtn">Submit</button>
+                                </form>
+                                <div>
+                            </div>
+                      </div>
+               
             </div>
         </Layout>
     )
@@ -51,4 +111,4 @@ query cusery {
   
 `
 
-export default Review
+export default Review;

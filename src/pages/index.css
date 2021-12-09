@@ -60,7 +60,7 @@
     font-size: 21px;
 }
 .inp{
-    width: 100%;
+    width: 515px;
     display: block;
     margin-bottom: 10px;
     height: 35px;
@@ -179,12 +179,15 @@
         width: 515px;
     }
 
-    @media screen and (max-width: 600px) {
-       .message_inp {
-          width: 100%;
-          margin-top: 0;
-        }
-      }
+    .nate{
+        height: 150px;
+        width: 150px;
+    }
+    .leave_review{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     
 }
