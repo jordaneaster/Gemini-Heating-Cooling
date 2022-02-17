@@ -173,6 +173,7 @@
       left: -110%;
       opacity: 1;
       transition: all 0.5s ease;
+      scroll-behavior: smooth;
     }
     .nav-menu.active {
       background-color: #012f5e;
@@ -181,9 +182,10 @@
       transition: all 0.5s ease;
       z-index: 1;
       width: 90%;
-
+      scroll-behavior: smooth;
     }
     .nav-item .active {
+      scroll-behavior: smooth;
       color: #ffdd40;
       border: none;
     }
@@ -192,6 +194,7 @@
       width: 100%;
       display: table;
       color: white;
+      scroll-behavior: smooth;
     }
   
     .nav-icon {
